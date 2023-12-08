@@ -1,0 +1,49 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .animated-box {
+    width: 100px;
+    height: 100px;
+    background-color: #3498db; /* Blue */
+    margin: 20px;
+    transition: background-color 0.5s ease-in-out;
+  }
+  
+  /* Анимация движения при наведении курсора */
+  .animated-box:hover {
+    animation: moveAnimation 1s ease-in-out;
+  }
+  
+  /* Анимация изменения размера при клике */
+  .animated-box.clicked {
+    animation: resizeAnimation 0.8s ease-in-out;
+  }
+  
+  /* Анимация цвета фона при загрузке страницы */
+  @keyframes backgroundColorAnimation {
+    0% { background-color: #3498db; }
+    50% { background-color: #e74c3c; } /* Red */
+    100% { background-color: #2ecc71; } /* Green */
+  }
+  
+  /* Комбинированная анимация */
+  @keyframes combinedAnimation {
+    0% {
+      transform: translateX(0) scale(1);
+      background-color: #3498db;
+    }
+    50% {
+      transform: translateX(100px) scale(1.5);
+      background-color: #e74c3c;
+    }
+    100% {
+      transform: translateX(0) scale(1);
+      background-color: #2ecc71;
+    }
+  }
+  
