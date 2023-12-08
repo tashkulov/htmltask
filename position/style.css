@@ -6,10 +6,9 @@ body {
   .small-square {
     width: 50px;
     height: 50px;
-    background-color: #3498db; /* Blue */
+    background-color: #3498db;
   }
   
-  /* Media Queries */
   @media screen and (max-width: 1200px) {
     .small-square {
       position: absolute;
